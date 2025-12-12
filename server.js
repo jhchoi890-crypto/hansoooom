@@ -81,7 +81,7 @@ app.post('/api/evaluate', async (req, res) => {
     const { level, userResponse, scenarioData } = req.body;
 
     try {
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
         const prompt = `
         당신은 '지속가능성 변화 주도 프로젝트'의 엄격한 전문 평가자이자 코치입니다.
